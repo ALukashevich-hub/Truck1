@@ -1,0 +1,12 @@
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title= "Учимся работать с шаблонизатором Pug"
+  body.container.is-fullhd
+    include components/header.pug
+    div.columns
+      div.column.is-one-quarter
+        include components/filter.pug
+      div.column
+        include components/content.pug
+    include components/footer.pug

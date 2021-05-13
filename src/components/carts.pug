@@ -1,0 +1,17 @@
+div.card.my-card
+  div.card-image.card-image-width
+    figure.image.is-4by3
+      - var test = htmlWebpackPlugin.options.templateParameters.stock[1].image
+      img(src=require("/src/assets/images/" + test) alt="Placeholder image")
+  div.card-content
+    div.media
+      div.media-content
+        p.title.is-4 John Smith
+        p.subtitle.is-6 @johnsmith
+    div.content
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      | Phasellus nec iaculis mauris.
+      a(href="#") #css
+      a(href="#") #responsive
+      br
+      time(datetime="2016-1-1") 11:09 PM - 1 Jan 2016

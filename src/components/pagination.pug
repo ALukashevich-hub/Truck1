@@ -1,0 +1,22 @@
+div.level
+  div.level-left
+    div.lelel-item
+      nav.pagination.is-centered(role="navigation" aria-label="pagination")
+        a.pagination-previous(disabled) &lt;
+        ul.pagination-list
+          li
+            a.pagination-link.is-current(aria-label="Goto page 1") 1
+          li
+            a.pagination-link(aria-label="Goto page 2") 2
+        a.pagination-next &gt;
+  div.level-right
+    div.lelel-item
+      label.label Sort by
+    div.lelel-item
+      div.field
+        div.select
+          select.select-width(name="select")
+            option(selected) Sort options
+            option option 1
+            option option 2
+            option option 3

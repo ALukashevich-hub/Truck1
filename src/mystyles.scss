@@ -1,0 +1,111 @@
+@charset "utf-8";
+$breadcrumb-item-separator-color: hsl(0, 0%, 0%);
+$pagination-current-background-color: #56CCF2;
+$pagination-current-border-color: #56CCF2;
+@import "~bulma/bulma";
+@import '~@creativebulma/bulma-collapsible';
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --black: #333333;
+  --link: #2F80ED;
+  --primary: #56CCF2;
+}
+html {
+  background-color: #D9D9D9;
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: var(--black);
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--black);
+}
+.navbar {
+  margin: 2rem 0 1rem 0;
+  height: 100px;
+}
+.logo {
+  margin-left: 1rem;
+}
+.navbar-menu {
+  background-color: white;
+  height: 60px;
+}
+.navbar-item {
+  color: var(--link);
+  &:hover {
+    color: var(--primary);
+  }
+}
+.breadcrumb{
+  margin: 1rem 0 1rem 1rem;
+}
+.pagination-link, .pagination-previous, .pagination-next{
+  background-color: white;
+  &[disabled] {
+    background-color: white;
+  }
+}
+.label {
+  margin-right: 1rem;
+}
+.select-width{
+  width: 230px;
+}
+.content-h1{
+  margin-bottom: 1rem;
+}
+.level {
+  margin: 1rem 0;
+}
+.my-card {
+  display: flex;
+}
+.card-margin {
+  margin-bottom: 0.5rem;
+}
+.card-image-width {
+  width: 300px;
+}
+.text-content {
+  margin-bottom: 1rem;
+}
+.footer {
+  background-color: white;
+}
+hr {
+  background-color: #333;
+}
+.my-icon {
+  width: 1rem;
+  height: 1rem;
+  color: grey;
+}
+.card-filter {
+  display: flex;
+  flex-direction: column;
+}
+.card-row {
+  display: flex;
+  justify-content: space-around;
+}
+.my-checkbox {
+  margin-bottom: 0.5rem;
+}
+.radio+.radio {
+  margin-left: 0;
+}
+.input-width {
+  width: 45%;
+}
+.my-button {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+}

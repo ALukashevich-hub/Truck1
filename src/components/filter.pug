@@ -1,0 +1,48 @@
+section.section.has-background-white
+  h2 #{htmlWebpackPlugin.options.templateParameters.stock.length} Results Found
+  hr
+  div.card.card-margin
+    header.card-header
+      p.card-header-title Param #1
+      a.card-header-icon.is-hidden-fullscreen(href="#collapsible-card" data-action="collapse" aria-label="more options")
+        span.icon.my-icon
+          <svg class="svg-inline--fa fa-angle-down fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+    div#collapsible-card.is-collapsible.is-active
+      div.card-content.card-filter
+        label.checkbox.my-checkbox  #[input(type="checkbox")] value 1
+        label.checkbox.my-checkbox  #[input(type="checkbox")] value 2
+        label.checkbox.my-checkbox  #[input(type="checkbox" checked)] value 3
+        label.checkbox.my-checkbox  #[input(type="checkbox" checked)] value 4
+        label.checkbox.my-checkbox  #[input(type="checkbox")] value 5
+  div.card.card-margin
+    header.card-header
+      p.card-header-title Param #2
+      a.card-header-icon.is-hidden-fullscreen(href="#collapsible-card" data-action="collapse" aria-label="more options")
+        span.icon.my-icon
+          <svg class="svg-inline--fa fa-angle-down fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+    div#collapsible-card.is-collapsible.is-active
+      div.card-content.card-filter
+        label.radio.my-checkbox  #[input(type="radio" name="radio1")] value 2_1
+        label.radio.my-checkbox  #[input(type="radio" name="radio1")] value 2_2
+        label.radio.my-checkbox  #[input(type="radio" name="radio1" checked)] value 2_3
+  div.card.card-margin
+    header.card-header
+      p.card-header-title Param #3
+      a.card-header-icon.is-hidden-fullscreen(href="#collapsible-card" data-action="collapse" aria-label="more options")
+        span.icon.my-icon
+          <svg class="svg-inline--fa fa-angle-down fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+    div#collapsible-card.is-collapsible.is-active
+      div.card-content.card-row
+        input.input.input-width(type="text" placeholder="Min")
+        input.input.input-width(type="text" placeholder="Max")
+  div.card.card-margin
+    header.card-header
+      p.card-header-title Param #4
+      a.card-header-icon.is-hidden-fullscreen(href="#collapsible-card" data-action="collapse" aria-label="more options")
+        span.icon.my-icon
+          <svg class="svg-inline--fa fa-angle-down fa-w-10" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg>
+    div#collapsible-card.is-collapsible.is-active
+      div.card-content
+        input.input(type="text" placeholder="Keyword")
+  div.control
+    button.button.my-button Submit

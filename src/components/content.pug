@@ -1,0 +1,6 @@
+h1.content-h1 #{htmlWebpackPlugin.options.templateParameters.page_meta.h1}
+include ./pagination.pug
+include ./carts.pug
+include ./pagination.pug
+each val in htmlWebpackPlugin.options.templateParameters.page_text
+  p.text-content #{val.content}
