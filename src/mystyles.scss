@@ -66,12 +66,15 @@ h2 {
 }
 .my-card {
   display: flex;
+  margin-bottom: 1rem;
 }
 .card-margin {
   margin-bottom: 0.5rem;
 }
 .card-image-width {
-  width: 300px;
+  width: 250px;
+  align-self: center;
+  margin-left: 1rem;
 }
 .text-content {
   margin-bottom: 1rem;

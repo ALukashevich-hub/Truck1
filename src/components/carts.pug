@@ -1,17 +1,27 @@
-div.card.my-card
-  div.card-image.card-image-width
-    figure.image.is-4by3
-      - var test = htmlWebpackPlugin.options.templateParameters.stock[1].image
-      img(src=require("/src/assets/images/" + test) alt="Placeholder image")
-  div.card-content
-    div.media
-      div.media-content
-        p.title.is-4 John Smith
-        p.subtitle.is-6 @johnsmith
-    div.content
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      | Phasellus nec iaculis mauris.
-      a(href="#") #css
-      a(href="#") #responsive
-      br
-      time(datetime="2016-1-1") 11:09 PM - 1 Jan 2016
+each stock in htmlWebpackPlugin.options.templateParameters.stock
+  div.card.my-card
+    div.card-image.card-image-width
+      figure.image.is-4by3
+        img(src=require(`/src/assets/images/${stock.image}`) alt="Placeholder image")
+    div.card-content
+      div.media
+        div.media-content
+          div.level
+            div.level-left
+              div.lelel-item
+                h2 #{stock.title}
+            div.level-right
+              div.lelel-item
+                p #{stock.price_currency} #{stock.price}
+          p.subtitle.is-6 #{stock.type}
+      div.content
+        <div class="tags">
+          <span class="tag">year: #{stock.year}</span>
+          <span class="tag">mileage: #{stock.mileage} #{stock.mileage_measure}</span>
+          <span class="tag">axle: #{stock.axle_configuration}</span>
+          <span class="tag">power: #{stock.power} #{stock.power_measure}</span>
+          <span class="tag">payload: #{stock.payload}</span>
+          <span class="tag">gross weight: #{stock.gross_weight}</span>
+          <span class="tag">model: #{stock.model}</span>
+          <span class="tag">make: #{stock.make}</span>
+        </div>

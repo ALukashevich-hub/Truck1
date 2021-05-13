@@ -4,10 +4,8 @@ nav.navbar(role="navigation" aria-label="main navigation")
       img.logo(src=require("/src/assets/images/truck.jpg") alt="Лого Truck1")
 div.navbar-menu
   div.navbar-start
-    a.navbar-item(href="#") #{htmlWebpackPlugin.options.templateParameters.nav[0].text}
-    a.navbar-item(href="#") #{htmlWebpackPlugin.options.templateParameters.nav[1].text}
-    a.navbar-item(href="#") #{htmlWebpackPlugin.options.templateParameters.nav[2].text}
-    a.navbar-item(href="#") #{htmlWebpackPlugin.options.templateParameters.nav[3].text}
+    each nav in htmlWebpackPlugin.options.templateParameters.nav
+      a.navbar-item(href=nav.href)= nav.text
 nav.breadcrumb.has-succeeds-separator(aria-label="breadcrumbs")
   ul
     each breadcrumb, index in htmlWebpackPlugin.options.templateParameters.breadcrumbs

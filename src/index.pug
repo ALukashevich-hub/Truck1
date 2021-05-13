@@ -1,7 +1,9 @@
 html(lang="ru")
   head
     meta(charset="utf-8")
-    title= "Учимся работать с шаблонизатором Pug"
+    meta(name="keywords" content=`tmlWebpackPlugin.options.templateParameters.page_meta.meta_keywords`)
+    meta(name="description" content=`tmlWebpackPlugin.options.templateParameters.page_meta.meta_description`)
+    title #{htmlWebpackPlugin.options.templateParameters.page_meta.title}
   body.container.is-fullhd
     include components/header.pug
     div.columns
